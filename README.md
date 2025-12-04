@@ -21,7 +21,7 @@ docker-compose up --build
 
 ## 📚 Documentation
 
-Voir [CLAUDE.md](./CLAUDE.md) pour la documentation complète du projet.
+
 
 ## 🏗️ Architecture
 
