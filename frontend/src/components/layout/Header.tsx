@@ -41,14 +41,14 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full h-30 border-b bg-white border-gray-200 fixed flex justify-between items-center px-3 md:px-6 lg:px-8 z-40">
+    <div className="w-full z-10 h-30 border-b bg-gray-50 border-gray-200 fixed flex justify-between items-center px-3 md:px-6 lg:px-8 z-40">
       {/* Logo - responsive */}
       <div className="flex-shrink-0">
         <img
           src="/Logo.png"
           alt="SmartKYC App"
           className="w-28 md:w-32 lg:w-40 h-10 md:h-12 lg:h-14 object-contain"
-          style={{height: "90px"}}
+          style={{height: "90px",}}
         />
       </div>
       

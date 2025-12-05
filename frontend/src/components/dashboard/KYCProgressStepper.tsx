@@ -14,7 +14,7 @@ const KYCProgressStepper: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+    <div className="bg-white rounded-xl p-6 shadow-md border border-yellow-600">
       <h3 className="text-lg font-semibold mb-4">Progression KYC</h3>
       <div className="space-y-4">
         {steps.map((step, idx) => (
