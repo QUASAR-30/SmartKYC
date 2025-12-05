@@ -31,14 +31,14 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-full p-2 shadow-sm">
             <span className="text-sm text-gray-600">📅 Tue, December 05</span>
           </div>
-          <div className="bg-white rounded-full p-2 shadow-sm">
-            <img src="https://via.placeholder.com/32" alt="User" className="rounded-full" />
+          <div className="bg-white rounded-full p-2 shadow-sm" >
+            <img src="/user.png" alt="User" className="rounded-full" style={{height:"130px"}} />
           </div>
         </div>
       </div>
 
       {/* Section 1: TrustScore Card */}
-      <div className="mb-6">
+      <div className="mb-6" style={{width:"400px"}}>
         {<TrustScoreCard {...trustData} /> }
       </div>
 
@@ -47,8 +47,8 @@ const Dashboard: React.FC = () => {
         <div className="lg:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <DocumentStatusTable />
-            {<TrustBadgeSection /> }
-            <ReputationSection />
+            
+            <ReputationSection />{<TrustBadgeSection /> }
             <KYCProgressStepper />
           </div>
         </div>
@@ -57,11 +57,6 @@ const Dashboard: React.FC = () => {
           <CreditRecommendation />
           <SubscriptionCard />
         </div>
-      </div>
-
-      {/* Quick Actions */}
-      <div className="mb-6">
-        <QuickActions />
       </div>
 
       {/* Footer */}

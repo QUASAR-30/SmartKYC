@@ -46,11 +46,11 @@ export default function Home() {
         </div>
 
         {/* IMAGE ON THE RIGHT */}
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center">
+        <div className="flex-1 mt-10 ms-3 md:mt-0 flex justify-center">
           <img
-            src="/Logo.png"
+            src="/step_by_step_form.png"
             alt="SmartKYC App"
-            className="w-64 md:w-80 lg:w-96 "
+            className="w-164 md:w-180 lg:w-196 rounded-xl"
           />
         </div>
       </section>
