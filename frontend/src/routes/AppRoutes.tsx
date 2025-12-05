@@ -7,12 +7,17 @@ import Home from "../pages/Home/Home";
 
 // Verify
 // import Start from "../pages/Verify/Start";
-import Step1 from "../pages/Verify/Step1";
-import MultiStepForm from "../pages/Verify/MultipleStepForm";
-import Dashboard from "../pages/Dashboard/Dashboard";
+// import Step1 from "../pages/Verify/Step1";
+// import MultiStepForm from "../pages/Verify/MultipleStepForm";
+// import Dashboard from "../pages/Dashboard/Dashboard";
 // import Step2 from "../pages/Verify/Step2";
 // import Step3 from "../pages/Verify/Step3";
 // import Summary from "../pages/Verify/Summary";
+
+// Correction 1 : Importation du composant conteneur principal (MultiStepForm)
+import MultiStepForm from '../pages/Verify/MultipleStepForm'; 
+import Dashboard from "../pages/Dashboard/Dashboard";
+
 
 // Dashboard
 // import Dashboard from "../pages/Dashboard/Dashboard";
@@ -38,14 +43,7 @@ export default function AppRoutes() {
             {/* 🟢 CORRECTION 2 : N'utiliser qu'UNE SEULE ROUTE pointant vers le conteneur MultiStepForm. 
                  Cela résout l'avertissement 'No routes matched location /verify/step2'. */}
             <Route path="/verify" element={<MultiStepForm />} />
-            
-            {/* ❌ Les anciennes routes d'étapes étaient incorrectes pour cette architecture
-            {<Route path="/verify" element={<Layout />} /> }
-            <Route path="/verify/step1" element={<Step1RCCM />} />
-            <Route path="/verify/step2" element={<Step2CNI />} />
-            <Route path="/verify/step3" element={<Step3 />} />
-            <Route path="/verify/summary" element={<Summary />} /> 
-            */}
+          
 
       {/* Dashboard */}
       <Route path="/dashboard" element={<Dashboard />} />
