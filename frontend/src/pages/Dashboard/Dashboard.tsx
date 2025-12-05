@@ -7,8 +7,8 @@ import PerformanceMetrics from "../../components/dashboard/PerformanceMetrics";
 import QuickActions from "../../components/dashboard/QuickActions";
 import ReputationSection from "../../components/dashboard/ReputationSection";
 import SubscriptionCard from "../../components/dashboard/SubscriptionCard";
-// import TrustBadgeSection from "../../components/dashboard/TrustBadgeSection";
-// import TrustScoreCard from "../../components/dashboard/TrustScoreCard";
+import TrustBadgeSection from "../../components/dashboard/TrustBadgeSection";
+import TrustScoreCard from "../../components/dashboard/TrustScoreCard";
 
 const Dashboard: React.FC = () => {
   // Mock data
@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => {
 
       {/* Section 1: TrustScore Card */}
       <div className="mb-6">
-        {/* <TrustScoreCard {...trustData} /> */}
+        {<TrustScoreCard {...trustData} /> }
       </div>
 
       {/* Sections 2-9: Grid Layout */}
@@ -47,7 +47,7 @@ const Dashboard: React.FC = () => {
         <div className="lg:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <DocumentStatusTable />
-            {/* <TrustBadgeSection /> */}
+            {<TrustBadgeSection /> }
             <ReputationSection />
             <KYCProgressStepper />
           </div>
