@@ -1,3 +1,5 @@
+// AppRoutes.tsx
+
 import { Routes, Route } from "react-router-dom";
 
 // Pages
@@ -6,6 +8,7 @@ import Home from "../pages/Home/Home";
 // Verify
 // import Start from "../pages/Verify/Start";
 import Step1 from "../pages/Verify/Step1";
+import MultiStepForm from "../pages/Verify/MultipleStepForm";
 import Dashboard from "../pages/Dashboard/Dashboard";
 // import Step2 from "../pages/Verify/Step2";
 // import Step3 from "../pages/Verify/Step3";
@@ -25,29 +28,36 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 
 export default function AppRoutes() {
     console.log("efeke");
-  return (
-    <Routes>
-      {/* Public */}
-      <Route path="/" element={<Home />} />
+    
+    return (
+        <Routes>
+            {/* Public */}
+            <Route path="/" element={<Home />} />
 
-      {/* Vérification KYC */}
-      {/* <Route path="/verify" element={<Start />} /> */}
-      <Route path="/verify/step1" element={<Step1 />} />
-      {/* <Route path="/verify/step2" element={<Step2 />} />
-      <Route path="/verify/step3" element={<Step3 />} />
-      <Route path="/verify/summary" element={<Summary />} /> */}
+            {/* Vérification KYC */}
+            {/* 🟢 CORRECTION 2 : N'utiliser qu'UNE SEULE ROUTE pointant vers le conteneur MultiStepForm. 
+                 Cela résout l'avertissement 'No routes matched location /verify/step2'. */}
+            <Route path="/verify" element={<MultiStepForm />} />
+            
+            {/* ❌ Les anciennes routes d'étapes étaient incorrectes pour cette architecture
+            {<Route path="/verify" element={<Layout />} /> }
+            <Route path="/verify/step1" element={<Step1RCCM />} />
+            <Route path="/verify/step2" element={<Step2CNI />} />
+            <Route path="/verify/step3" element={<Step3 />} />
+            <Route path="/verify/summary" element={<Summary />} /> 
+            */}
 
       {/* Dashboard */}
       <Route path="/dashboard" element={<Dashboard />} />
-      {/*<Route path="/dashboard/score" element={<Score />} />
+      {/* <Route path="/dashboard/score" element={<Score />} />
       <Route path="/dashboard/documents" element={<Documents />} />
       <Route path="/dashboard/badge" element={<Badge />} /> */}
 
-      {/* Admin */}
-      {/* <Route path="/admin" element={<AdminHome />} />
-      <Route path="/admin/users" element={<Users />} />
-      <Route path="/admin/documents" element={<AdminDocs />} />
-      <Route path="/admin/audits" element={<Audits />} /> */}
-    </Routes>
-  );
+            {/* Admin */}
+            {/* <Route path="/admin" element={<AdminHome />} />
+            <Route path="/admin/users" element={<Users />} />
+            <Route path="/admin/documents" element={<AdminDocs />} />
+            <Route path="/admin/audits" element={<Audits />} /> */}
+        </Routes>
+    );
 }

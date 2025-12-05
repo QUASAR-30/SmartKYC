@@ -26,7 +26,7 @@ export default function Home() {
           {/* BUTTONS */}
           <div className="mt-6 flex flex-wrap gap-4">
             <a
-              href="/dashboard"
+              href="/verify"
               className="bg-yellow-600 text-white px-6 py-3 rounded-md font-medium shadow-md hover:bg-green-700 transition"
             >
               Commencer →
