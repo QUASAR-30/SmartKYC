@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 // Verify
 // import Start from "../pages/Verify/Start";
 import Step1 from "../pages/Verify/Step1";
+import Dashboard from "../pages/Dashboard/Dashboard";
 // import Step2 from "../pages/Verify/Step2";
 // import Step3 from "../pages/Verify/Step3";
 // import Summary from "../pages/Verify/Summary";
@@ -37,8 +38,8 @@ export default function AppRoutes() {
       <Route path="/verify/summary" element={<Summary />} /> */}
 
       {/* Dashboard */}
-      {/* <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/dashboard/score" element={<Score />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      {/*<Route path="/dashboard/score" element={<Score />} />
       <Route path="/dashboard/documents" element={<Documents />} />
       <Route path="/dashboard/badge" element={<Badge />} /> */}
 
