@@ -3,7 +3,7 @@ import Header from '../../components/layout/Header'
 export default function Home() {
  
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-gray-50">
       <Header/>
       <div className="w-full h-14"></div>
       {/* --- HERO SECTION --- */}

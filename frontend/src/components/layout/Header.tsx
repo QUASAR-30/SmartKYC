@@ -15,13 +15,13 @@ const handleClick = () => {
 
 };
     return(
-         <div className="w-full h-30 bg-white fixed flex  justify-between items-center  px-4 py-5 space-x-4">
+         <div className="w-full z-10 h-30 bg-gray-50 fixed flex  justify-between items-center  px-4 py-5 space-x-4">
        <div className="">
           <img
             src="/Logo.png"
             alt="SmartKYC App"
             className=" object-contain"
-            style={{height: "90px"}}
+            style={{height: "90px",}}
           />
         </div>
        <div className="flex items-center space-x-6">

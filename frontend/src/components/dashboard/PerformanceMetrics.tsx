@@ -13,7 +13,7 @@ const data = [
 
 const PerformanceMetrics: React.FC = () => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+    <div className="bg-white  rounded-xl p-6 shadow-md border border-yellow-600">
       <h3 className="text-lg font-semibold mb-4">Performance commerciale</h3>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">

@@ -66,14 +66,14 @@ const sparklineData = {
 
 const TrustScoreCard: React.FC<TrustScoreCardProps> = ({ score, badge, trend, status }) => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+    <div className="bg-white rounded-xl p-6 shadow-md border border-yellow-600">
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-2xl font-bold text-gray-800">Score : {score} / 1000</h2>
-          <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-            badge === 'Gold' ? 'bg-yellow-100 text-yellow-800' :
-            badge === 'Silver' ? 'bg-gray-100 text-gray-800' :
-            badge === 'Bronze' ? 'bg-orange-100 text-orange-800' :
+          <span className={`inline-block px-3 py-1 rounded-full text-md font-medium ${
+            badge === 'Gold' ? 'text-yellow-800' :
+            badge === 'Silver' ? 'text-gray-800' :
+            badge === 'Bronze' ? ' text-orange-800' :
             'bg-blue-100 text-blue-800'
           }`}>
             {badge} ⭐{badge === 'Gold' && '⭐⭐⭐'}
@@ -105,9 +105,9 @@ const TrustScoreCard: React.FC<TrustScoreCardProps> = ({ score, badge, trend, st
         ))}
       </div>
 
-      <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">
+      {/* <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">
         Améliorer mon Score
-      </button>
+      </button> */}
     </div>
   );
 };
